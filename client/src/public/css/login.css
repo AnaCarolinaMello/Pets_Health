@@ -1,0 +1,675 @@
+
+main{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+}
+
+#flexbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100vh;
+    background:
+    linear-gradient(
+      rgba(7, 110, 45, 0.515),rgba(7, 110, 45, 0.515)
+    ),
+    url('../assets/bannerLogin.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#titleBanner{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 47px;
+    color: white;
+    text-align: center;
+}
+
+#line{
+    border-bottom: 4px solid white;
+    width: 13%;
+}
+
+#banner p{
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+}
+
+#textoPrincipal{
+    font-size: 26px;
+    margin-top: 8%;
+}
+
+#textoSecundario{
+    font-size: 23px;
+}
+
+#signUp{
+    height: 8%;
+    width: 33%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 4px 10px 4px 10px;
+    border: solid 1px white;
+    border-radius: 35px;
+    margin-top: 8%;
+}
+
+#signUp:hover{
+    cursor: pointer;
+    background-color: rgba(28, 214, 127, 0.699);
+}
+
+#loginArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#loginTitle{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 47px;
+    color: rgb(28, 214, 127);
+    text-align: center;
+}
+
+#lineGreen{
+    border-bottom: 4px solid rgb(28, 214, 127);
+    width: 7%;
+    margin-bottom: 10%;
+}
+
+#inputs{
+    position: relative;
+}
+
+#divInput{
+    width: 60%;
+}
+
+#user{
+    height: 11%;
+    width: 100%;
+    border: rgb(104, 104, 104) solid 2px;
+    border-radius: 3px;
+    background-color: rgb(104, 104, 104);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: white;
+    padding: 4% 2% 2% 2%;
+    margin-bottom: 9.5%;
+}
+
+#user:hover{
+    outline: 0;
+}
+
+#user:focus{
+    border: rgb(28, 214, 127) solid 3px;
+    outline: 0;
+    box-shadow: none;
+}
+
+#password{
+    height: 11%;
+    width: 100%;
+    border: rgb(104, 104, 104) solid 2px;
+    border-radius: 3px;
+    background-color: rgb(104, 104, 104);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: white;
+    padding: 4% 2% 2% 2%;
+}
+
+#password:hover{
+    outline: 0;
+}
+
+#password:focus{
+    border: rgb(28, 214, 127) solid 3px;
+    outline: 0;
+    box-shadow: none;
+}
+
+label{
+    color: rgb(171, 171, 171);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+#labelPassword:focus-within{
+    color: aqua;
+}
+
+#divButtons{
+    height: 62px;
+    width: 20%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#login{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(28, 214, 127);
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 14px 10px 14px 10px;
+    margin-top: 7%;
+    border: none;
+    border-radius: 35px;
+}
+
+#login:hover{
+    cursor: pointer;
+    background-color: rgb(34, 164, 104)
+}
+
+#cadastro{
+    display: none;
+    height: 100%;
+    width: 37%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 10px 10px 10px 10px;
+    border: solid 2px white;
+    border-radius: 35px;
+}
+
+#cadastro:hover{
+    cursor: pointer;
+    background-color: rgba(28, 214, 127, 0.699);
+}
+
+#marcasText{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 3%;
+}
+
+#marcas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgSvg{
+    width: 4%;
+    height: 4%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.imgSvg:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-height: 668px) {
+
+    #titleBanner{
+        font-size: 37px;
+    }
+    #line{
+        border-bottom: 3px solid white;
+    }
+    #textoPrincipal{
+        font-size: 17px;
+    }
+    
+    #textoSecundario{
+        font-size: 15.5px;
+    }
+    #loginTitle{
+        font-size: 37px;
+    }
+    
+    #lineGreen{
+        border-bottom: 3px solid rgb(28, 214, 127);
+    }
+    #signUp{
+        width: 40%;
+        font-size: 15.5px;
+    }
+    #user{
+        padding: 5% 4% 5% 4%;
+        font-size: 18px;
+    }
+    #password{
+        padding: 5% 4% 5% 4%;
+        font-size: 18px;
+    }
+    label{
+        font-size: 15.5px;
+        font-weight: bold;
+    }
+    #divButtons{
+        height: 50px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    #login{
+        padding: 10px 10px 10px 10px;
+        font-size: 15.5px;
+    }
+    #marcasText{
+        font-size: 16.8px;
+        margin-bottom: 4%;
+    }
+    
+    .imgSvg{
+        width: 5%;
+        height: 5%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (max-width: 948px) {
+    main{
+        position: absolute;
+        background:
+            linear-gradient(
+             rgba(7, 110, 45, 0.515),rgba(7, 110, 45, 0.515)
+            ),
+            url('../assets/bannerLogin.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #flexbox{
+        flex-direction: column;
+        height: 100%;
+    }
+    #banner{
+        background: none;
+        height: fit-content;
+        margin-top: 7%;
+    }
+    #titleBanner{
+        font-size: 50px;
+    }
+    #signUp{
+        display: none;
+    }
+    #textoPrincipal{
+        display: none;
+    }
+    
+    #textoSecundario{
+        display: none;
+    }
+    #loginArea{
+        background-color: rgb(60, 60, 60);
+        margin-top: 10%;
+        padding-top: 8%;
+        border-top-right-radius: 12%;
+        border-top-left-radius: 12%;
+    }
+    #loginTitle{
+        font-size: 50px;
+    }
+    #divInput{
+        width: 70%;
+    }
+    #user{
+        padding: 3.5% 4% 2.5% 4%;
+        font-size: 25px;
+    }
+    #password{
+        padding: 3.5% 4% 2.5% 4%;
+        font-size: 25px;
+    }
+    label{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #divButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 74px;
+        width: 100%;
+        margin-top: 11%;
+        margin-bottom: 7%;
+    }
+    #login{
+        height: 100%;
+        width: 37%;
+        font-size: 25px;
+        padding: 10px 5px 10px 5px;
+        margin-right: 2.5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #cadastro{
+        display: block;
+        margin-left: 2.5%;
+    }
+    #marcasText{
+        margin-bottom: 6%;
+        font-size: 24px;
+    }
+    .imgSvg{
+        width: 25%;
+        height: 25%;
+        margin-right: -3.5%;
+        margin-left: -3.5%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #banner{
+        margin-top: 5%;
+    }
+    #titleBanner{
+        font-size: 50px;
+    }
+    #lineGreen{
+        margin-bottom: 0;
+    }
+    
+    #textoSecundario{
+        display: none;
+    }
+    #loginArea{
+        margin-top: 7%;
+        padding-top: 6%;
+    }
+    #loginTitle{
+        font-size: 50px;
+    }
+    #divInput{
+        width: 70%;
+    }
+    #user{
+        padding: 4% 4% 4% 4%;
+        font-size: 22px;
+        margin-top: 13%;
+        margin-bottom: 0;
+    }
+    #password{
+        padding: 4% 4% 4% 4%;
+        font-size: 22px;
+        margin-top: 7%;
+    }
+    label{
+        font-size: 20px;
+    }
+    #divButtons{
+        width: 90%;
+        height: 60px;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    #login{
+        font-size: 24px;
+        margin-right: 2.5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #cadastro{
+        font-size: 24px;
+        margin-left: 2.5%;
+    }
+    #marcasText{
+        margin-bottom: 6%;
+        font-size: 24px;
+    }
+    .imgSvg{
+        width: 25%;
+        height: 25%;
+        margin-right: -3.5%;
+        margin-left: -3.5%;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    #banner{
+        margin-top: 5%;
+    }
+    #titleBanner{
+        font-size: 30px;
+    }
+    #lineGreen{
+        margin-bottom: 0;
+    }
+    
+    #textoSecundario{
+        display: none;
+    }
+    #loginArea{
+        margin-top: 7%;
+        padding-top: 6%;
+    }
+    #loginTitle{
+        font-size: 35px;
+    }
+    #divInput{
+        width: 70%;
+    }
+    #user{
+        padding: 4.5% 4% 5% 4%;
+        font-size: 18px;
+        margin-top: 13%;
+        margin-bottom: 0;
+    }
+    #password{
+        padding: 4.5% 4% 5% 4%;
+        font-size: 18px;
+        margin-top: 7%;
+    }
+    label{
+        font-size: 16px;
+    }
+    #divButtons{
+        width: 90%;
+        height: 60px;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
+    #login{
+        font-size: 18px;
+        margin-right: 2.5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #cadastro{
+        font-size: 18px;
+        margin-left: 2.5%;
+    }
+    #marcasText{
+        margin-bottom: 6%;
+        font-size: 17px;
+    }
+    .imgSvg{
+        width: 25%;
+        height: 25%;
+        margin-right: -3.5%;
+        margin-left: -3.5%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #banner{
+        background: none;
+        height: fit-content;
+        margin-top: 10%;
+    }
+    #titleBanner{
+        font-size: 30px;
+    }
+
+    #loginArea{
+        justify-content: center;
+        background-color: rgb(60, 60, 60);
+        margin-top: 13%;
+        padding-top: 4%;
+        border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+    }
+    #loginTitle{
+        font-size: 35px;
+    }
+    #divInput{
+        width: 80%;
+    }
+    #user{
+        padding: 7% 4% 3% 4%;
+        font-size: 20px;
+        margin-top: 16%;
+    }
+    #password{
+        padding: 7% 4% 3% 4%;
+        font-size: 20px;
+        margin-top: 12%;
+    }
+    label{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    #divButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        margin-top: 13%;
+        margin-bottom: 13%;
+    }
+    #login{
+        height: 100%;
+        width: 37%;
+        font-size: 20px;
+        padding: 10px 10px 10px 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 2.5%;
+    }
+    #cadastro{
+        display: block;
+        margin-left: 2.5%;
+        font-size: 20px;
+    }
+    #marcasText{
+        margin-bottom: 8%;
+        font-size: 20px;
+    }
+    .imgSvg{
+        width: 28.5%;
+        height: 28.5%;
+        margin-right: -3.5%;
+        margin-left: -3.5%;
+    }
+}
+@media only screen and (max-width: 376px) {
+    #banner{
+        margin-top: 8%;
+    }
+    #titleBanner{
+        font-size: 26px;
+    }
+    #loginArea{
+        margin-top: 10%;
+        padding-top: 7%;
+    }
+    
+    #loginTitle{
+        font-size: 30px;
+    }
+    #user{
+        margin-top: 17%;
+        font-size: 16px;
+    }
+    #password{
+        font-size: 16px;
+        margin-top: 8%;
+    }
+    label{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #divButtons{
+        margin-top: 13%;
+        margin-bottom: 10%;
+    }
+    #login{
+        font-size: 16px;
+    }
+    #cadastro{
+        font-size: 16px;
+    }
+    #marcasText{
+        margin-bottom: 9%;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    #titleBanner{
+        font-size: 26px;
+    }
+    #loginArea{
+        margin-top: 5%;
+        padding-top: 2%;
+    }
+    
+    #loginTitle{
+        font-size: 30px;
+    }
+    #user{
+        margin-top: 14%;
+        font-size: 15px;
+        padding: 8% 4% 5% 4%;
+    }
+    #password{
+        font-size: 15px;
+        margin-top: 13%;
+        padding: 8% 4% 5% 4%;
+    }
+    label{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #divButtons{
+        margin-top: 13%;
+        margin-bottom: 10%;
+    }
+    #login{
+        font-size: 15px;
+    }
+    #cadastro{
+        font-size: 15px;
+    }
+    #marcasText{
+        margin-bottom: 10%;
+        font-size: 15px;
+    }
+}
