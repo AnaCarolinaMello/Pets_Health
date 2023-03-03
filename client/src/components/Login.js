@@ -8,7 +8,7 @@ import facebook from '../public/assets/facebook-white.svg'
 import "normalize.css/normalize.css";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-const Login = ()=>{
+function Login(){
     
     return(
         <main>
